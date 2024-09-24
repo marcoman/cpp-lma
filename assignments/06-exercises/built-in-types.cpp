@@ -7,15 +7,18 @@ using namespace std;
 int main (void) {
     int i = 10;
     int j {20};
-    int k(30);
-    int l = {40};
-    int m {50};
+
+    // This won't work because it shouldn't in C++
+//    int myarr{3,5};
+    // Instead, this is how we intialize an array with values
+    int myarr[3] = {3,5,7};
 
     cout << "i = " << i << endl;
     cout << "j = " << j << endl;
-    cout << "k = " << k << endl;
-    cout << "l = " << l << endl;
-    cout << "m = " << m << endl;
+    // This prints the address of the array
+    cout << "myarr = " << myarr << endl;
+    // this prints the value of the first item in the array
+    cout << "*myarr = " << *myarr << endl;
 
     return 0;
 }
