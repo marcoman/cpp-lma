@@ -16,3 +16,7 @@ I print the contents to the screen.
 ## Flattened two-dimensional array
 - Repeat the previous exercise, but with the data "flattened" into a one-dimensional array
 - Why is this useful?
+
+The flattened array is useful for CPU-based memory access, where we benefit from operating on a contiguous and sequential set of memory.
+
+However, I know that if I do GPU-based memory access, I will want to ensure I utilize memory in 2D so I can allocated threads in parallel.  A true 2D matrix makes sense.
