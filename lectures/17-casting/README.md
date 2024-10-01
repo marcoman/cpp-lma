@@ -72,3 +72,10 @@ We use this mostly for low-level work (communication with hardware, OS, binary f
 I expect to use this feature when doing device development.
 
 
+# dynamic_cast
+
+Converts a pointer to a base class object into a pointer to a derived class project.
+
+This is done at runtime.
+
+
