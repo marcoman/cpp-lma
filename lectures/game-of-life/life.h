@@ -2,7 +2,7 @@
 #define LIFE_H
 
 const char live_cell{'X'};
-const char dead_cell{'.'};
+const char dead_cell{' '};
 
 // Define our playing area.  The instructions are for 80x24, but I'm going bigger
 const int rowmax = 50;

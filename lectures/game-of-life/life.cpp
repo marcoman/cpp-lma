@@ -4,8 +4,6 @@
 #include <iostream>
 
 using namespace std;
-void calculate(Grid cur, Grid next);
-
 int main(int argc, char *argv[])
 {
     std::cout << "Conway's game of life.\n" << std::endl;
@@ -15,8 +13,8 @@ int main(int argc, char *argv[])
     std::cin.get();
 
     Grid current_generation;
-    current_generation.initialize();
-
+    current_generation.randomize();
+    
     while (true) {
         current_generation.draw();
         std::cin.get();
@@ -25,8 +23,3 @@ int main(int argc, char *argv[])
         current_generation.update(next_generation);
     }
 }
-
-void calculate(Grid cur, Grid next)
-{
-}
-
