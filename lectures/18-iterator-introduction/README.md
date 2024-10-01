@@ -51,3 +51,8 @@ while (it != str.end() ) {
     ++it;
 }
 ```
+
+
+# Using iterators with `vector`
+
+I also added an examle that uses vector<int> in [test.cpp](test.cpp)
