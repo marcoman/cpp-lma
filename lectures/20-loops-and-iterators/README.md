@@ -100,3 +100,13 @@ for (auto& el: vec)
 cout << endl;
 
 ```
+
+# When do we use range for loops
+
+- If we want to visit each element only once.
+- Whenever it is possible.
+- And we aren't modifying the elements.
+
+NOTE: This is one of the newer features for me to use.
+
+
