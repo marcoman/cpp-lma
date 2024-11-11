@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+include typo
 
 using namespace std;
 
@@ -7,6 +8,8 @@ int main() {
     string hello{"hello"};
     hello.append(" world"s);
     cout << hello << endl;
+
+    string hello{"redeclare"};
 
     hello.append("BLA!!!!"s, 3,2); // This adds from character 3, a total of 2 characters.
     cout << hello << endl;
