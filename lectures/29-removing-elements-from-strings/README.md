@@ -30,3 +30,17 @@ auto gdx = str.find("H");
 str.replace(gdx, 5, "Goodbye") // This replaces 5 characers starting from H with the letters "Goodbye"
 
 ```
+
+## `replace()` and iterators
+Similar story to the erase() with iterators.
+
+## `assign()`
+
+
+`assign()` removes all the characters from a string and replaces them with other characters.
+
+
+```cpp
+string str3{"Hello"};
+str3.assign("Goodbye");
+```

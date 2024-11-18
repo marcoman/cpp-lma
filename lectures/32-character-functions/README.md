@@ -31,4 +31,41 @@ for (auto& c: str)
 
 ```
 
+However, this has the effect of altering the strings, which may not be desirable.
 
+Let's consider how we would write our own.
+
+`equal_strings` function - let's emulate built-in operators
+
+Take two strings by const reference and return a bool
+
+```cpp
+bool equal_strings(const string& lhs,
+    const string& rhs)
+    {}
+
+```
+
+But what if the strings are not equal in length?  Use the built-in (and fast) `size()` function
+
+```cpp
+    if (lhs.size() != rhs.size())
+        return false;
+```
+
+```cpp
+auto lit = cbegin(lhs);
+auto rit = cbegin(rhs);
+
+while (lit != cend(lhs) && rit != cend(rhs)) {
+    ...
+    if (toupper(*lit) != toupper(*rit))
+        return false;
+
+    lit++;
+    rit++;
+
+    ...
+    return true;
+}
+```
