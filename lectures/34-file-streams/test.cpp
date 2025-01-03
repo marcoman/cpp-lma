@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-
+#include <vector>
 
 using namespace std;
 
@@ -36,4 +36,20 @@ int main() {
     }
 
     ifile2.close();
+
+
+    // Now, let's write a file
+
+    ofstream ofile{"text-out.txt"};
+
+    if (ofile)
+        cout << "successfully opened file for writring\n";
+    
+    vector <string> words = {"The", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
+
+    for (auto word: words)
+        ofile << word << ", ";
+    
+    ofile.close();
+
 }
