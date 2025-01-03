@@ -34,3 +34,18 @@ in C++11, we can now take a std::string for the filename:
     string str{"text.txt"};
     fstream file(str);
 ```
+
+## Reading from a file
+
+We can use ifile the same way as cin:
+
+```cpp
+    while (ifile >> text)
+    cout << text << ",";
+```
+
+This reads one word at a time, and remove all white space.
+
+NOTE: We have to match the structure of the file.  Streams don't do this for us.
+
+
